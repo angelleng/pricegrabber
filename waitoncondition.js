@@ -46,6 +46,7 @@ system = require('system');
 
 if (system.args.length === 1) {
     console.log('Try to pass some args when invoking this script!');
+    phantom.exit(); 
 } else {
     address =  system.args[1].toString(); 
 
@@ -55,6 +56,7 @@ if (system.args.length === 1) {
         var hahaha = 1; 
         if (status !== 'success') {
             console.log('FAIL to load the address');
+            phantom.exit();
         }
         else {
             var interval = setInterval(function(){
@@ -65,7 +67,7 @@ if (system.args.length === 1) {
                         return [document.getElementsByClassName("price")[0].childNodes[1].childNodes[1].nodeValue, 
                         document.getElementsByClassName("departDate")[0].innerHTML.trim(),
                         document.getElementsByClassName("arriveDate")[0].innerHTML.trim()]; 
-                        } else return "Not available!!!"; 
+                        } else return ["Not available!!!", "Not available!!!","Not available!!!"]; 
                         });
                     console.log("Departure Date: " + k[1]); 
                     console.log("Arrival Date: " + k[2])
@@ -93,7 +95,7 @@ if (system.args.length === 1) {
             //     120000);
         } 
     }
-    ); 
+    );
 }
 
 
