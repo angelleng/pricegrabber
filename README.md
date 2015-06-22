@@ -1,5 +1,5 @@
 # pricegrabber
-This is a tool based on phantomjs. 
+This is a tool based on phantomjs. http://phantomjs.org/ 
 
 
 grab_gs.js: js code used for google flights. Google flights has a large database and it's fast, but it doesn't give you the link to book the flight.  
