@@ -1147,8 +1147,6 @@ Price is: 1,693
 Departure Date: Fri, Jul 24, 2015
 Arrival Date: Tue, Aug 25, 2015
 Price is: 1,678
-FAIL to load the address
-FAIL to load the address
 Departure Date: Fri, Jul 24, 2015
 Arrival Date: Fri, Aug 28, 2015
 Price is: 1,319
